@@ -38,6 +38,45 @@
   {
     "type": "mapgen",
     "method": "json",
+    "om_terrain": [ "lmoe_locked" ],
+    "//": "Above ground, used in prepper quest.",
+    "weight": 100,
+    "object": {
+      "rows": [
+        "       S     S         S",
+        "   S       S     S      ",
+        " S     S            S   ",
+        "          S             ",
+        "   S    S SSSSS      S  ",
+        "      SSSSSSSSSSSS      ",
+        "     SS$$$$$$$$$$SS     ",
+        "     S$$TTTTTTTT$$S   S ",
+        "    SS$$T))))))T$$S     ",
+        " S  SS$$T)####)T$$SS    ",
+        "    SS$$T)#>>#)T$$SS    ",
+        "    SS$$T)#..#)T$$SS    ",
+        "    SS$$T)#+##)T$$SS   S",
+        "  S  S$$T))_)))T$$SS    ",
+        "     S$$$$$_$$$$$$S     ",
+        "     SS$$$$_$$$$$SS  S  ",
+        "      SSSSS_SSSSSS      ",
+        "S      S S   SS S       ",
+        "                 S    S ",
+        "   S   S                ",
+        "            S  S        ",
+        "                       S",
+        "    S      S            ",
+        "                  S     "
+      ],
+      "palettes": [ "bunker_ext" ],
+      "terrain": {
+        "+": "t_door_metal_pickable"
+                 }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "om_terrain": [ "lmoe_roof" ],
     "//": "Above ground",
     "weight": 100,
