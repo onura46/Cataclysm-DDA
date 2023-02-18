@@ -31,6 +31,7 @@
     "name": { "str": "letter" },
     "looks_like": "paper",
     "description": "A written message from one person to another, usually put in an envelope.  Reading it would be rude.",
+    "snippet_category": "letter",
     "weight": "3 g",
     "volume": "6 ml",
     "longest_side": "297 mm",
