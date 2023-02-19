@@ -6,6 +6,14 @@
       {
         "id": "letter_1",
         "text": "Roxanne,\n\nI know it's been a while since I wrote to you, but I've been thinking about when we were together.  I hope you're still at this address.  Things seem crazier than ever, and I miss talking to you.  You're the most brilliant woman I ever met.\n\nMy number is the same as always.  Love,\n\nKeith"
+      },
+      {
+        "id": "letter_2",
+        "text": "Dear Charlotte,\n\nThe Academy wishes to inform you that many complaints about your recent behavior have been received by the Dean's Office.  Due to the volume of complaints, we are unfortunately required to place you on administrative leave.  Should further such behavior continue during this period, we may be required to end your tenure completely.\n\nThe Academy has always remained a secular, non-political, and scientific institution.  Regardless of our educators' experiences - and your colleagues do not support your recent ramblings, it should be noted - our curriculum is rigid.  Skepticism and curiosity are healthy, but hysterical outbursts claiming 'true extradimensional communication with God' which terrify students in the middle of class are not.\n\nPlease find enclosed the details of this decision..."
+      },
+      {
+        "id": "letter_3",
+        "text": ""
       }
     ]
   }
