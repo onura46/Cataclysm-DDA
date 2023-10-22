@@ -1,0 +1,45 @@
+[
+  {
+    "id": "EOC_LOOTBOX_COMPUTER",
+    "type": "effect_on_condition",
+    "effect": [ "open_dialogue" ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "COMP_LOOTBOX_COMPUTER",
+    "dynamic_line": "Welcome, <u_name>. Please select a category of lootbox to see more info:",
+    "responses": [ { "text": "Foodboxes", "topic": "COMP_LOOTBOX_COMPUTER_FOODBOXES" }, { "text": "LOG OUT", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "COMP_LOOTBOX_COMPUTER_FOODBOXES",
+    "dynamic_line": "Foodboxes contain food, drinks, raw ingredients, and even rare cooking utensils and fuel.\n\nHere are the foodboxes currently available for you to purchase:",
+    "responses": [
+      {
+        "text": "Buy Common Foodbox [$500]",
+        "topic": "COMP_LOOTBOX_COMPUTER_FOODBOX_COMMON",
+        "condition": { "u_has_cash": 50000 },
+        "effect": {
+          "u_spend_cash": 50000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_FOODBOX_COMMON",
+              "effect": [
+                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      { "text": "GO BACK", "topic": "TALK_NONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "COMP_LOOTBOX_COMPUTER_FOODBOX_COMMON",
+    "dynamic_line": "Common Foodbox purchased!  Win chance increased!\n\nYour items will appear in your inventory.  Any items you're unable to carry will fall to the floor, so please double-check the area for loot!",
+    "responses": [ { "text": "GO BACK", "topic": "TALK_NONE" } ]
+  }
+]

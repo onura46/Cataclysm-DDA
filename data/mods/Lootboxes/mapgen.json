@@ -1,0 +1,58 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "lootbox_computer",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "place_computers": [
+        {
+          "x": 0,
+          "y": 0,
+          "name": "Lootbox Machine",
+          "eocs": [ "EOC_LOOTBOX_COMPUTER" ],
+          "chat_topics": [ "COMP_LOOTBOX_COMPUTER" ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "sub_station" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "StSStSStSStSStSStSStSStS",
+        "SSSSSSSSSSSSSSSSSSSSSSSS",
+        "SS||-;;-||-;;-||-;;-||SS",
+        "SS|     |      |     |SS",
+        "SS|                  |SS",
+        "SS|b                b|SS",
+        "SS|b                b|SS",
+        "SS|b    bb    bb    b|SS",
+        "SS|D    bM    Mb    F|SS",
+        "SS|D    bM    Mb    F|SS",
+        "SS|D    bM    Mb    F|SS",
+        "SS|     bb    bb     |SS",
+        "SS|2                2|SS",
+        "SS|3                3|SS",
+        "SS|                  |SS",
+        "SS|                  |SS",
+        "SS|                  |SS",
+        "SS|                  |SS",
+        "SS||                ||SS",
+        "SSS||              ||SSS",
+        "SSSS||>>> 6  6 >>>||SSSS",
+        "SSSSS||||||||||||||SSSSS",
+        "SSSSSSSSSSSSSSSS4SSSSSSS",
+        "SSSSSSSSSSSSSSSSSSSSSSSS"
+      ],
+      "palettes": [ "subway" ],
+      "vendingmachines": { "D": { "item_group": "vending_drink", "lootable": true }, "F": { "item_group": "vending_food", "lootable": true } },
+      "nested": { "2": { "chunks": [ "lootbox_computer" ] } },
+      "terrain": { "3": "t_atm" }
+    }
+  }
+]

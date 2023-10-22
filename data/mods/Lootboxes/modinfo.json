@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "lootboxes",
+    "name": "Lootboxes",
+    "authors": [ "onura46" ],
+    "maintainers": [ "onura46" ],
+    "description": "Pay to win! Exchange money in your bank (ATM) at terminals in subway stations for lootboxes.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

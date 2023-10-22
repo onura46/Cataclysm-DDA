@@ -3108,13 +3108,18 @@ void talk_effect_fun_t::set_remove_item_with( const JsonObject &jo, std::string_
 
 void talk_effect_fun_t::set_u_spend_cash( const JsonObject &jo, std::string_view member )
 {
+    Character &player_character = get_player_character();
     dbl_or_var amount = get_dbl_or_var( jo, member );
     std::vector<effect_on_condition_id> true_eocs = load_eoc_vector( jo, "true_eocs" );
     std::vector<effect_on_condition_id> false_eocs = load_eoc_vector( jo, "false_eocs" );
-    function = [amount, true_eocs, false_eocs]( dialogue & d ) {
-        if( d.actor( true )->buy_from( amount.evaluate( d ) ) ) {
+    function = [amount, true_eocs, false_eocs, &player_character]( dialogue & d ) {
+        if( d.actor( true )->get_computer() != nullptr ){
+            player_character.cash -= amount.evaluate( d ); // technically cash is still deprecated; computers don't have money, so just subtract it directly and run the EOC
+            run_eoc_vector( true_eocs, d ); 
+        }
+        else if( d.actor( true )->buy_from( amount.evaluate( d ) ) ) {
             run_eoc_vector( true_eocs, d );
-        } else {
+        }else {
             run_eoc_vector( false_eocs, d );
         }
     };
