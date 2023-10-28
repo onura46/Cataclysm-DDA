@@ -1,0 +1,186 @@
+[
+  {
+    "id": "lootbox_weaponbox_melee_weapons",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "weapons", "prob": 100 }
+
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_melee_weapons_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at melee weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_weaponbox_melee_weapons", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_common_weapons",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "guns_common", "prob": 95 },
+      { "group": "guns_rare", "prob": 2 },
+      { "group": "guns_improvised", "prob": 2 },
+      { "group": "guns_milspec", "prob": 1 }
+
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_common_weapons_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at common weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_weaponbox_common_weapons", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_rare_weapons",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "guns_rare", "prob": 90 },
+      { "group": "guns_milspec", "prob": 9 },
+      { "group": "guns_obscure", "prob": 1 }
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_rare_weapons_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at rare weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_weaponbox_rare_weapons", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_launchers",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "guns_launcher_milspec", "prob": 100 }
+    ]
+  },
+  {
+    "id": "lootbox_weaponbox_launchers_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at launcher",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_weaponbox_launchers", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_pistol",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "group": "ammo_pistol_common", "prob": 70 },
+      { "group": "ammo_pistol_rare", "prob": 15 },
+      { "group": "ammo_pistol_hunting", "prob": 5 },
+      { "group": "ammo_pistol_milspec", "prob": 5 },
+      { "group": "ammo_pistol_obscure", "prob": 5 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_pistol_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at pistol ammo",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_ammobox_pistol", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_rifle",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "group": "ammo_rifle_common", "prob": 70 },
+      { "group": "ammo_rifle_rare", "prob": 15 },
+      { "group": "ammo_rifle_hunting", "prob": 5 },
+      { "group": "ammo_rifle_milspec", "prob": 5 },
+      { "group": "ammo_rifle_obscure", "prob": 5 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_rifle_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at rifle ammo",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_ammobox_rifle", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_shotgun",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "group": "ammo_shotgun_common", "prob": 70 },
+      { "group": "ammo_shotgun_rare", "prob": 10 },
+      { "group": "ammo_shotgun_milspec", "prob": 10 },
+      { "group": "ammo_shotgun_obscure", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_shotgun_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at shotgun ammo",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_ammobox_shotgun", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_grenades_explosives",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "group": "grenade_can_full", "prob": 500 },
+      { "group": "ammo_launcher_grenade", "prob": 250, "count": [6,20] },
+      { "group": "c4_box_full", "prob": 50 },
+      { "item": "molotov", "prob": 100, "count": [3,10] },
+      { "item": "pipebomb", "prob": 100, "count": [3,10] },
+      { "item": "homemade_grenade", "prob": 500, "count": [3,10] },
+      { "item": "military_explosive_bomb", "prob": 50, "count": [2,7] },
+      { "item": "smokebomb", "prob": 50 },
+      { "item": "EMPbomb", "prob": 50 },
+      { "item": "dynamite", "prob": 50 },
+      { "item": "acidbomb", "prob": 50 },
+      { "item": "firecracker", "prob": 50 },
+      { "item": "homemade_demolition_charge", "prob": 30 },
+      { "item": "full_barrel_bomb", "prob": 10 }
+    ]
+  },
+  {
+    "id": "lootbox_ammobox_grenades_explosives_extra_chance",
+    "type": "item_group",
+    "//": "Extra chance at grenades/explosives",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "null", "prob": 90 },
+      { "group": "lootbox_ammobox_grenades_explosives", "prob": 10 }
+    ]
+  }
+]
+

@@ -7,27 +7,88 @@
   {
     "type": "talk_topic",
     "id": "COMP_LOOTBOX_COMPUTER",
-    "dynamic_line": "Welcome, <u_name>. Please select a category of lootbox to see more info:",
-    "responses": [ { "text": "Foodboxes", "topic": "COMP_LOOTBOX_COMPUTER_FOODBOXES" }, { "text": "LOG OUT", "topic": "TALK_DONE" } ]
+    "dynamic_line": "Welcome, <u_name>.  Please select a category of lootbox to see more info:",
+    "responses": [
+      { "text": "Weapons", "topic": "COMP_LOOTBOX_COMPUTER_WEAPON_BOXES" },
+      { "text": "Ammunition", "topic": "COMP_LOOTBOX_COMPUTER_AMMO_BOXES" },
+      { "text": "Books", "topic": "COMP_LOOTBOX_COMPUTER_BOOK_BOXES" },
+      { "text": "Chemicals", "topic": "COMP_LOOTBOX_COMPUTER_CHEM_BOXES" },
+      { "text": "Bionics/Mutagen", "topic": "COMP_LOOTBOX_COMPUTER_BIONIC_MUTAGEN_BOXES" },
+      { "text": "LOG OUT", "topic": "TALK_DONE" }
+    ]
   },
   {
     "type": "talk_topic",
-    "id": "COMP_LOOTBOX_COMPUTER_FOODBOXES",
-    "dynamic_line": "Foodboxes contain food, drinks, raw ingredients, and even rare cooking utensils and fuel.\n\nHere are the foodboxes currently available for you to purchase:",
+    "id": "COMP_LOOTBOX_COMPUTER_WEAPON_BOXES",
+    "dynamic_line": "Weaponboxes contain new weapons - melee and ranged - magazines, and attachments.  Each weaponbox is guaranteed at least one weapon with a full magazine.\n\nHere are the weaponboxes currently available for you to purchase:",
     "responses": [
       {
-        "text": "Buy Common Foodbox [$500]",
-        "topic": "COMP_LOOTBOX_COMPUTER_FOODBOX_COMMON",
-        "condition": { "u_has_cash": 50000 },
+        "text": "Buy Common Weaponbox - Melee [$5000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 500000 },
         "effect": {
-          "u_spend_cash": 50000,
+          "u_spend_cash": 500000,
           "true_eocs": [
             {
-              "id": "EOC_LOOTBOX_FOODBOX_COMMON",
+              "id": "EOC_LOOTBOX_WEAPONBOX_MELEE",
               "effect": [
-                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true },
-                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true },
-                { "u_spawn_item": "SUS_fridge", "count": 1, "use_item_group": true }
+                { "u_spawn_item": "lootbox_weaponbox_melee_weapons", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_melee_weapons_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_melee_weapons_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Common Weaponbox - Guns [$7500]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 750000 },
+        "effect": {
+          "u_spend_cash": 750000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_WEAPONBOX_COMMON",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Rare Weaponbox - Guns [$10000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 1000000 },
+        "effect": {
+          "u_spend_cash": 1000000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_WEAPONBOX_RARE",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Launcher Weaponbox [$20000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 2000000 },
+        "effect": {
+          "u_spend_cash": 2000000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_WEAPONBOX_LAUNCHERS",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_launchers", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_launchers_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_launchers_extra_chance", "count": 1, "use_item_group": true }
               ]
             }
           ]
@@ -38,8 +99,88 @@
   },
   {
     "type": "talk_topic",
-    "id": "COMP_LOOTBOX_COMPUTER_FOODBOX_COMMON",
-    "dynamic_line": "Common Foodbox purchased!  Win chance increased!\n\nYour items will appear in your inventory.  Any items you're unable to carry will fall to the floor, so please double-check the area for loot!",
-    "responses": [ { "text": "GO BACK", "topic": "TALK_NONE" } ]
+    "id": "COMP_LOOTBOX_COMPUTER_AMMO_BOXES",
+    "dynamic_line": "Ammoboxes always give 5 boxes of ammo for their first type of gun, with two extra chances of giving 3 more boxes of other types.\n\nHere are the ammoboxes currently available for you to purchase:",
+    "responses": [
+      {
+        "text": "Buy Ammobox - Pistols/SMGs [$2000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 200000 },
+        "effect": {
+          "u_spend_cash": 200000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_AMMOBOX_PISTOLS",
+              "effect": [
+                { "u_spawn_item": "lootbox_ammobox_pistol", "count": 5 },
+                { "u_spawn_item": "lootbox_ammobox_pistol_extra_chance", "count": 3 },
+                { "u_spawn_item": "lootbox_ammobox_pistol_extra_chance", "count": 3 }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Ammobox - Shotguns [$2000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 200000 },
+        "effect": {
+          "u_spend_cash": 200000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_AMMOBOX_SHOTGUNS",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_common_weapons_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Ammobox - Rifles [$2000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 200000 },
+        "effect": {
+          "u_spend_cash": 200000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_AMMOBOX_RIFLES",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_rare_weapons_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "text": "Buy Ammobox - Grenades/Explosives [$4000]",
+        "topic": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+        "condition": { "u_has_cash": 400000 },
+        "effect": {
+          "u_spend_cash": 400000,
+          "true_eocs": [
+            {
+              "id": "EOC_LOOTBOX_AMMOBOX_GRENADES_EXPLOSIVES",
+              "effect": [
+                { "u_spawn_item": "lootbox_weaponbox_launchers", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_launchers_extra_chance", "count": 1, "use_item_group": true },
+                { "u_spawn_item": "lootbox_weaponbox_launchers_extra_chance", "count": 1, "use_item_group": true }
+              ]
+            }
+          ]
+        }
+      },
+      { "text": "GO BACK", "topic": "TALK_NONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "COMP_LOOTBOX_COMPUTER_CHECKOUT",
+    "dynamic_line": "Lootbox purchased!  Win chance increased!\n\nYour items will appear in your inventory.  Any items you're unable to carry will fall to the floor, so please double-check the area for loot!",
+    "responses": [ { "text": "BACK TO MENU", "topic": "COMP_LOOTBOX_COMPUTER" } ]
   }
 ]
