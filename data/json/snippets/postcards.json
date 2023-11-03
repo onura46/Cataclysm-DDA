@@ -1,0 +1,20 @@
+[
+  {
+    "type": "snippet",
+    "category": "postcard_snippets",
+    "text": [
+      {
+        "id": "postcard_1",
+        "text": "This postcard features an aerial photograph of a small town in autumn, embedded in forest and hills and next to a large river.  The trees are intense shades of orange, red, yellow, and green.  A large bridge with wide blue arches crosses over the river into the town, which seems old and barely changed from its founding.  The text on the postcard reads: \"Hello from beautiful Marquette, Iowa where the Mississippi and Wisconsin meet!\"  On the back, the sender has written a thoughtful letter detailing their vacation spent camping nearby."
+      },
+      {
+        "id": "postcard_2",
+        "text": "On the front of this postcard is a colorful illustration of tall apartment buildings, green trees, and a pastel blue river with a vertical-lift bridge running over it.  A large rainbow presides over the entire scene.  The text on the front says \"Greetings from Portland, Oregon!\" and on the back is a message of love from the sender to their partner, bragging about all the good food they've eaten."
+      },
+      {
+        "id": "postcard_3",
+        "text": "This strange postcard features a blurry, desaturated photo and text, some of which is scribbled out, that says \"I went to Roswell, New Mexico, got [REDACTED] and then went home.\"  The sender has taken up the entire back of the card describing their adventures at the UFO festival, the interesting people they met, and how long it took to drive through the desert to get there."
+      }
+    ]
+  }
+]

@@ -129,7 +129,8 @@
     "price_postapoc": 0,
     "material": [ "paper" ],
     "symbol": "`",
-    "color": "white"
+    "color": "white",
+    "snippet_category": "postcard_snippets"
   },
   {
     "id": "gift_card",
