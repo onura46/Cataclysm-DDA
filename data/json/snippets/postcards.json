@@ -13,7 +13,7 @@
       },
       {
         "id": "postcard_3",
-        "text": "This strange postcard features a blurry, desaturated photo and text, some of which is scribbled out, that says \"I went to Roswell, New Mexico, got [REDACTED] and then went home.\"  The sender has taken up the entire back of the card describing their adventures at the UFO festival, the interesting people they met, and how long it took to drive through the desert to get there."
+        "text": "This strange postcard features a blurry, desaturated photo and text that says \"I went to Roswell, New Mexico, got [REDACTED] and then went home.\"  The sender has taken up the entire back of the card describing their adventures at the UFO festival, the interesting people they met, and how boring it was driving through the desert to get there."
       },
       {
         "id": "postcard_4",
@@ -26,6 +26,18 @@
       {
         "id": "postcard_6",
         "text": "The front of this postcard features a photo of a beautiful shoreline, with tall bluffs, rough green shrubbery, white buildings dotting the coast, and a vibrant blue ocean stretching out to the horizon.  In the foreground, a boy in a sailor's hat looks out over the water.  On the back, the sender describes their recent vacation cruising around the coast of Spain, although they apparently lost their expensive prescription sunglasses within minutes of leaving port."
+      },
+      {
+        "id": "postcard_7",
+        "text": "The picture on this postcard looks like something out of a science fiction movie.  It's a library, multiple stories tall, seemingly built inside a larger building as if to secure it even further, and windowed completely with large glass panes on the outside.  Shelves packed with books are visible from top to bottom.  The caption reads \"The Beinecke Rare Book & Manuscript Library, Yale University\".  The sheer scale of it is bewildering, and you wonder if there's any hidden knowledge there that might help counteract this apocalypse.  Anything at all…"
+      },
+      {
+        "id": "postcard_8",
+        "text": "This postcard features a photo of some comically impossible firearms: a Civil War-era pistol with three barrels and three hammers side by side, a rifle with extremely detailed ivory carvings and an abnormally long barrel, and a revolver with a huge cylinder that seems to hold 12 rounds instead of 6.  Something about their design tells you that they probably aren't real guns.  Taped to the back is a photo of a smiling family standing in a strange hallway that seems to go on forever in the background.  The caption on the back reads \"The House on the Rock, esoteric collections\"."
+      },
+      {
+        "id": "postcard_9",
+        "text": "The picture on this postcard is truly confusing: a painting of a zebra, a small mirror, and a dying potted plant in a vomit-colored room painted with oil paints on canvas, depicted in a Realist style.  The zebra is looking at the viewer, reflected a bit in the mirror, and the potted plant sits limply in the corner.  The back of the postcard reads \"The Museum of Bad Art, Boston, Massachusetts\".  The sender writes about their vacation all over New England, and impressively makes half a dozen fart-related puns in only a few sentences."
       }
     ]
   }
