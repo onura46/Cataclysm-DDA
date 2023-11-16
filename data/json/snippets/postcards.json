@@ -5,7 +5,7 @@
     "text": [
       {
         "id": "postcard_1",
-        "text": "This postcard features an aerial photograph of a small town in autumn, embedded in forest and hills and next to a large river.  The trees are intense shades of orange, red, yellow, and green.  A large bridge with wide blue arches crosses over the river into the town, which seems old and barely changed from its founding.  The text on the postcard reads: \"Hello from beautiful Marquette, Iowa where the Mississippi and Wisconsin meet!\"  On the back, the sender has written a thoughtful letter detailing their vacation spent camping nearby."
+        "text": "This postcard features an aerial photograph of a small town in autumn, embedded in forest and hills, situated next to a large river.  The trees are intense shades of orange, red, yellow, and green.  A large bridge with wide blue arches crosses over the river into the town, which seems old and barely changed from its founding.  The text on the postcard reads: \"Hello from beautiful Marquette, Iowa where the Mississippi and Wisconsin meet!\"  On the back, the sender has written a thoughtful letter detailing their vacation spent camping nearby."
       },
       {
         "id": "postcard_2",
@@ -13,7 +13,7 @@
       },
       {
         "id": "postcard_3",
-        "text": "This strange postcard features a blurry, desaturated photo and text that says \"I went to Roswell, New Mexico, got [REDACTED] and then went home.\"  The sender has taken up the entire back of the card describing their adventures at the UFO festival, the interesting people they met, and how boring it was driving through the desert to get there."
+        "text": "This strange postcard features a blurry, desaturated photo of a motel in a desert, with text that says \"I went to Roswell, New Mexico and got [REDACTED]\"  The sender has taken up the entire back of the card describing their adventures at the UFO festival, the interesting people they met, and how boring it was driving through the desert to get there."
       },
       {
         "id": "postcard_4",
@@ -29,7 +29,7 @@
       },
       {
         "id": "postcard_7",
-        "text": "The picture on this postcard looks like something out of a science fiction movie.  It's a library, multiple stories tall, seemingly built inside a larger building as if to secure it even further, and windowed completely with large glass panes on the outside.  Shelves packed with books are visible from top to bottom.  The caption reads \"The Beinecke Rare Book & Manuscript Library, Yale University\".  The sheer scale of it is bewildering, and you wonder if there's any hidden knowledge there that might help counteract this apocalypse.  Anything at all…"
+        "text": "The picture on this postcard looks like something out of a science fiction movie.  It's a library, multiple stories tall, seemingly built inside a larger building as if to secure it even further, and windowed completely with large glass panes so that you can see everything.  Shelves packed with books are visible from top to bottom.  The caption reads \"The Beinecke Rare Book & Manuscript Library, Yale University\".  The sheer scale of it is bewildering, and you wonder if there's any hidden knowledge there that might help counteract this apocalypse.  Anything at all…"
       },
       {
         "id": "postcard_8",
@@ -37,7 +37,15 @@
       },
       {
         "id": "postcard_9",
-        "text": "The picture on this postcard is truly confusing: a painting of a zebra, a small mirror, and a dying potted plant in a vomit-colored room painted with oil paints on canvas, depicted in a Realist style.  The zebra is looking at the viewer, reflected a bit in the mirror, and the potted plant sits limply in the corner.  The back of the postcard reads \"The Museum of Bad Art, Boston, Massachusetts\".  The sender writes about their vacation all over New England, and impressively makes half a dozen fart-related puns in only a few sentences."
+        "text": "The picture on this postcard is truly confusing: a painting of a zebra, a small mirror, and a dying potted plant in a vomit-colored room painted with oil paints on canvas, depicted in a Realist style.  The zebra is looking at the viewer, reflected a bit in the mirror, and the potted plant sits limply in the corner.  The back of the postcard reads \"The Museum of Bad Art - Boston, Massachusetts\".  The sender writes about their vacation all over New England, and impressively makes half a dozen fart-related puns in only a few sentences."
+      },
+      {
+        "id": "postcard_10",
+        "text": "On this postcard, a family with three young children sticks their faces through a mural that makes them look like fish in a coral reef; one is a clownfish, another a stingray, another an eel…  The text on the front reads \"Cairns Aquarium - Queensland, Australia\" and the family has written a short message to the recipient.  The family claims that their tour guide has a pet kangaroo at home who makes her coffee in the morning, but it sounds suspiciously like the kind of thing one might say to mess with tourists."
+      },
+      {
+        "id": "postcard_11",
+        "text": "The image on the front of this postcard gives you a momentary scare!  It's a weathered face carved into rock, with pitch black recesses where the mouth and eyes should be.  The caption on the back reads \"Bocca della Verità, The Mouth of Truth.  Basilica di Santa Maria in Cosmedin\".  The sender has written a humorous love letter to the recipient on the back, discussing their adventures in central Italy, and has drawn a picture of a skull surrounded with flowers and hearts with a note that reads \"St. Valentine died for our love <3\"."
       }
     ]
   }
