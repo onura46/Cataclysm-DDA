@@ -1,0 +1,102 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_START",
+    "dynamic_line": "…",
+    "responses": [
+      {
+        "text": "Hello?",
+        "topic": "TALK_SAT_PHONE_NOT_WORKING",
+        "condition": { "not": { "u_at_om_location": "radio_tower_top" } }
+      },
+      { "text": "Hello?", "topic": "TALK_SAT_PHONE_1", "condition": { "u_at_om_location": "radio_tower_top" } }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_NOT_WORKING",
+    "dynamic_line": "**You hear nothing.*",
+    "responses": [ { "text": "*Turn off the phone.*", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_1",
+    "dynamic_line": "Katherine McAster:\n<u_name>?  Is that really you?!",
+    "responses": [ { "text": "Yes, it's me!", "topic": "TALK_SAT_PHONE_2" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_2",
+    "dynamic_line": "Katherine McAster:\nOh my god!  I thought I'd never hear from you again.",
+    "responses": [
+      {
+        "text": "Katherine, I don't know where to start!  It's so much worse than anyone expected.  The dead are… alive!  The cops, the military… there's no one in control.  You have to get me outta here!",
+        "topic": "TALK_SAT_PHONE_3"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_3",
+    "dynamic_line": "Katherine McAster:\nI…  Listen…  Peter's dead.  Julie's dead.  It's not just the Massachusetts area; it's everywhere!  We had to leave the station after the power went out.  We're staying on the coast, but I… I'm not sure we can get to you.",
+    "responses": [ { "text": "What do you mean?  How many of you are there?", "topic": "TALK_SAT_PHONE_4" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_4",
+    "dynamic_line": "Katherine McAster:\nIt's too dangerous to use the roads, <u_name>.  I've seen things out there that look like they wandered out of a movie.  There's three of us: me, Jimmy, and the intern.  We're safe, far away from the cities, at least for now.  But, there's no way we can leave.  We tried to flag down a Coast Guard ship a few days ago, but it just… drifted right past us.",
+    "responses": [ { "text": "So… I'm on my own?", "topic": "TALK_SAT_PHONE_5" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_5",
+    "dynamic_line": "Katherine McAster:\nI…  Well…\n\n**Katherine seems to put the phone down for a second.  There's muted talking in the background.*\n\nKatherine McAster:\nIf you can get to the coast in one piece, I'll find a boat and come pick you up.  A row boat, if we have to.",
+    "responses": [ { "text": "*sigh*", "topic": "TALK_SAT_PHONE_6" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_6",
+    "dynamic_line": "Katherine McAster:\nAre you safe?",
+    "responses": [ { "text": "Well… no.  Not really.", "topic": "TALK_SAT_PHONE_7" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_7",
+    "dynamic_line": "Katherine McAster:\nI'm sorry we did this.  I know how much you wanted it, but I still should have said no.",
+    "responses": [ { "text": "Just get me out of here, I'm begging you.", "topic": "TALK_SAT_PHONE_8" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_8",
+    "dynamic_line": "Katherine McAster:\nOkay, listen, make it to the coast and I'll come get you.  I promise.  Head east and we'll be there.",
+    "responses": [
+      {
+        "text": "Okay, what else?",
+        "topic": "TALK_SAT_PHONE_9",
+        "effect": [ { "assign_mission": "MISSION_REACH_THE_OCEAN" } ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_9",
+    "dynamic_line": "Katherine McAster:\nWhen you get to the coast, send up a signal.  A flare, a fire, anything.  I can't guarantee we'll have a connection, but I'll see that.",
+    "responses": [
+      {
+        "text": "Okay.  I'll try my best.",
+        "topic": "TALK_SAT_PHONE_10"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_10",
+    "dynamic_line": "Katherine McAster:\nUntil I see you, stay safe.  Oh, and <u_name>, if you're there anyway, try to get some good shots.",
+    "responses": [
+      {
+        "text": "See you soon…  I hope.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

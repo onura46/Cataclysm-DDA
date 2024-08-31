@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sat_phone",
+    "copy-from": "cell_phone",
+    "type": "TOOL",
+    "name": { "str": "satellite phone" },
+    "description": "A waterproof satellite phone designed to be used in the most remote and dangerous places in the world, where no other forms of communication work.  Though ostensibly a very expensive piece of technology, it looks kind of like a cheap walkie-talkie.  It also tells the time.",
+    "weight": "200 g",
+    "volume": "150 ml",
+    "material": [ { "type": "aluminum", "portion": 75 }, { "type": "plastic", "portion": 25 } ],
+    "price": "1500 USD",
+    "price_postapoc": "20 USD",
+    "symbol": ";",
+    "color": "light_gray",
+    "ammo": [ "battery" ],
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Call production team",
+      "effect_on_conditions": [ { "id": "EOC_SAT_PHONE_ACTIVATE", "effect": [ { "open_dialogue": { "topic": "TALK_SAT_PHONE_START" } } ] } ]
+    },
+    "flags": [ "WATCH", "ALARMCLOCK", "ELECTRONIC" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT" ],
+        "default_magazine": "light_battery_cell"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "charged_sat_phone",
+    "entries": [ { "item": "light_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "sat_phone" } ]
+  }
+]

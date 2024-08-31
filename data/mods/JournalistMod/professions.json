@@ -1,0 +1,59 @@
+[
+  {
+    "type": "profession",
+    "id": "photojournalist",
+    "name": "Trespassing Photojournalist",
+    "description": "When the riots kicked off and everything went to hell, you and your gonzo team of bloodthirsty producers decided you could do better than the 'old media' cowards who refused to cover it.  Ignoring quarantines and curfews, supplied only with what they could buy at an army surplus store last-minute, they sent you in.  No one knew what to expect, but it wasn't… this.",
+    "points": 1,
+    "skills": [ { "level": 4, "name": "speech" } ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "helmet_army" },
+          { "item": "dress_shirt" },
+          { "item": "soft_3a_vest", "variant": "press_armor_vest" },
+          { "item": "socks" },
+          { "item": "boots" },
+          { "item": "wristwatch" },
+          { "item": "camera_bag" },
+          { "group": "charged_sat_phone" },
+          { "group": "wallet_full" },
+          { "item": "knife_rambo" },
+          { "item": "light_battery_cell", "ammo-item": "battery", "charges": 300, "container-item": "camera_pro" },
+          { "item": "jeans" }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts" } ] },
+      "female": { "entries": [ { "item": "boy_shorts" }, { "item": "bra" } ] }
+    },
+    "missions": [ "MISSION_REACH_A_RADIO_TOWER" ]
+  },
+  {
+    "id": "MISSION_REACH_A_RADIO_TOWER",
+    "type": "mission_definition",
+    "name": { "str": "Reach a radio tower." },
+    "description": "Things are a bit out of control.  If you have any chance of reaching your production team, you need to find a way to get signal on your satellite phone.  Make it to the top of a radio tower and give them a call.",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "radio_tower",
+    "difficulty": 1,
+    "value": 0,
+    "start": {
+      "assign_mission_target": { "om_terrain": "radio_tower", "reveal_radius": 3, "om_special": "station_radio", "search_range": 120 }
+    },
+    "origins": [ "ORIGIN_GAME_START" ]
+  },
+  {
+    "id": "MISSION_REACH_THE_OCEAN",
+    "type": "mission_definition",
+    "name": { "str": "Reach the ocean." },
+    "description": "Your production team can't reach you, but they've given you a rendezvous point.  Get to the ocean shore, send a signal, and wait for rescue…",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "ocean_shore",
+    "difficulty": 1,
+    "value": 0,
+    "start": {
+      "assign_mission_target": { "om_terrain": "ocean_shore", "reveal_radius": 3, "om_special": "ocean_shore", "search_range": 4000 }
+    },
+    "origins": [ "ORIGIN_GAME_START" ]
+  }
+]

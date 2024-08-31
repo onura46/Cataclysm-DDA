@@ -1,0 +1,13 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "journalist",
+    "name": "Journalist Additions",
+    "authors": [ "onura46" ],
+    "maintainers": [ "onura46" ],
+    "description": "Hi Youtube :)",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ],
+    "obsolete": false
+  }
+]
