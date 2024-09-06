@@ -15,7 +15,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_NOT_WORKING",
-    "dynamic_line": "**You hear nothing.*",
+    "dynamic_line": "**You hear nothing.  The screen says that the only available satellites are near the horizon.  Your connection is limited.*",
     "responses": [ { "text": "*Turn off the phone.*", "topic": "TALK_DONE" } ]
   },
   {
@@ -38,13 +38,13 @@
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_3",
-    "dynamic_line": "Katherine McAster:\nI…  Listen…  Peter's dead.  Julie's dead.  It's not just the Massachusetts area; it's everywhere!  We had to leave the station after the power went out.  We're staying on the coast, but I… I'm not sure we can get to you.",
+    "dynamic_line": "Katherine McAster:\nI…  Listen…  Fuck it, there's no other way to say it.  It's not just the New England area; it's everywhere!  It's so much worse than anyone thought.  We dropped you off, went out to film for the night, and then went back to the studio.  When we got back, Peter was there.  He had become one of… them.  I didn't know what to do, so we just left.  I can log the footage on my laptop, but there's nowhere to send it to.  We're staying on the coast now, but I… I'm not sure we can get to you.",
     "responses": [ { "text": "What do you mean?  How many of you are there?", "topic": "TALK_SAT_PHONE_4" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_4",
-    "dynamic_line": "Katherine McAster:\nIt's too dangerous to use the roads, <u_name>.  I've seen things out there that look like they wandered out of a movie.  There's three of us: me, Jimmy, and the intern.  We're safe, far away from the cities, at least for now.  But, there's no way we can leave.  We tried to flag down a Coast Guard ship a few days ago, but it just… drifted right past us.",
+    "dynamic_line": "Katherine McAster:\nThere's three of us: me, Jimmy, and the intern.  We're safe, far away from the cities, at least for now.  But, there's no way we can leave.  It's too dangerous to use the roads, <u_name>.  I've seen things out there that look like they wandered out of a movie.  We tried to flag down a Coast Guard ship a few days ago, but it just… drifted right past us.",
     "responses": [ { "text": "So… I'm on my own?", "topic": "TALK_SAT_PHONE_5" } ]
   },
   {
@@ -71,7 +71,7 @@
     "dynamic_line": "Katherine McAster:\nOkay, listen, make it to the coast and I'll come get you.  I promise.  Head east and we'll be there.",
     "responses": [
       {
-        "text": "Okay, what else?",
+        "text": "Okay, anything else?",
         "topic": "TALK_SAT_PHONE_9",
         "effect": [ { "assign_mission": "MISSION_REACH_THE_OCEAN" } ]
       }

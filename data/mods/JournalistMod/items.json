@@ -4,7 +4,7 @@
     "copy-from": "cell_phone",
     "type": "TOOL",
     "name": { "str": "satellite phone" },
-    "description": "A waterproof satellite phone designed to be used in the most remote and dangerous places in the world, where no other forms of communication work.  Though ostensibly a very expensive piece of technology, it looks kind of like a cheap walkie-talkie.  It also tells the time.",
+    "description": "A satellite phone designed to be used in the most remote and dangerous places in the world, where no other forms of communication work.  Though ostensibly a very expensive piece of technology, it looks kind of like a cheap walkie-talkie.  It also tells the time.",
     "weight": "200 g",
     "volume": "150 ml",
     "material": [ { "type": "aluminum", "portion": 75 }, { "type": "plastic", "portion": 25 } ],
