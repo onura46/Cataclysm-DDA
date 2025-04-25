@@ -9,7 +9,8 @@
         "topic": "TALK_SAT_PHONE_NOT_WORKING",
         "condition": { "not": { "u_at_om_location": "radio_tower_top" } }
       },
-      { "text": "Hello?", "topic": "TALK_SAT_PHONE_1", "condition": { "u_at_om_location": "radio_tower_top" } }
+      { "text": "Hello?", "topic": "TALK_SAT_PHONE_1", "condition": { "u_at_om_location": "radio_tower_top" } },
+      { "text": "Hello?", "topic": "TALK_SAT_PHONE_11", "condition": { "u_at_om_location": "ocean_shore_dock_small" } }
     ]
   },
   {
@@ -21,7 +22,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_1",
-    "dynamic_line": "Katherine McAster:\n<u_name>?  Is that really you?!",
+    "dynamic_line": "Katherine McAster:\nDarwin?  Is that really you?!",
     "responses": [ { "text": "Yes, it's me!", "topic": "TALK_SAT_PHONE_2" } ]
   },
   {
@@ -30,7 +31,7 @@
     "dynamic_line": "Katherine McAster:\nOh my god!  I thought I'd never hear from you again.",
     "responses": [
       {
-        "text": "Katherine, I don't know where to start!  It's so much worse than anyone expected.  The dead are… alive!  The cops, the military… there's no one in control.  You have to get me outta here!",
+        "text": "Katherine, I don't know where to start!  It's so much worse than anyone expected.  They evacuated the city yesterday, but today, I don't know what happened!  The dead are… alive!  The cops, the military… there's no one in control.  I'm totally alone.  You have to get me outta here!",
         "topic": "TALK_SAT_PHONE_3"
       }
     ]
@@ -44,7 +45,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_4",
-    "dynamic_line": "Katherine McAster:\nThere's three of us: me, Jimmy, and the intern.  We're safe, far away from the cities, at least for now.  But, there's no way we can leave.  It's too dangerous to use the roads, <u_name>.  I've seen things out there that look like they wandered out of a movie.  We tried to flag down a Coast Guard ship a few days ago, but it just… drifted right past us.",
+    "dynamic_line": "Katherine McAster:\nThere's three of us: me, Jimmy, and the intern.  We're safe, far away from the cities, at least for now.  But, there's no way we can leave.  It's too dangerous to use the roads, Darwin.  I've seen things out there that look like they wandered out of a movie.  We tried to flag down a Coast Guard ship a few days ago, but it just… drifted right past us.",
     "responses": [ { "text": "So… I'm on my own?", "topic": "TALK_SAT_PHONE_5" } ]
   },
   {
@@ -91,10 +92,76 @@
   {
     "type": "talk_topic",
     "id": "TALK_SAT_PHONE_10",
-    "dynamic_line": "Katherine McAster:\nUntil I see you, stay safe.  Oh, and <u_name>, if you're there anyway, try to get some good shots.",
+    "dynamic_line": "Katherine McAster:\nUntil I see you, stay safe.  Oh, and Darwin, if you're there anyway, try to get some good shots.",
     "responses": [
       {
         "text": "See you soon…  I hope.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_11",
+    "dynamic_line": "Katherine McAster:\nDarwin?!  Oh my God, it's been four days!",
+    "responses": [
+      {
+        "text": "I can't believe you picked up, Katherine.  I made it to the coast, and I need help.  Are you guys still safe?",
+        "topic": "TALK_SAT_PHONE_12"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_12",
+    "dynamic_line": "Katherine McAster:\nSafe is… well, one way to put it.  We stole a boat.  A yacht, actually.  We spent two days on it anchored just off-shore, but some guys in a Coast Guard ship finally found us and picked us up.  They say we can't leave, but they also won't go to shore to pick you up.",
+    "responses": [
+      {
+        "text": "What?!  But they're the government!",
+        "topic": "TALK_SAT_PHONE_13"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_13",
+    "dynamic_line": "Katherine McAster:\nThey say they don't have any orders to do so, but I think they mean they just don't have any orders.  Period.  They're afraid.  I watched them dump almost half of their crew overboard in an attempt to contain the spread of the virus.",
+    "responses": [
+      {
+        "text": "But Katherine, how does a virus spread worldwide overnight?  And what about the portals?  Did they say anything about the portals?",
+        "topic": "TALK_SAT_PHONE_14"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_14",
+    "dynamic_line": "Katherine McAster:\nWhat do you mean, portals?  I thought we agreed that was tabloid shit?",
+    "responses": [
+      {
+        "text": "Well, yeah…  I did…  It turns out they're real, actually.  I saw one, and I saw the creatures that come from them.",
+        "topic": "TALK_SAT_PHONE_15"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_15",
+    "dynamic_line": "Katherine McAster:\nDarwin, we're gonna come get you on the boat.  But, I have one condition…",
+    "responses": [
+      {
+        "text": "What do you mean, one condition?",
+        "topic": "TALK_SAT_PHONE_16"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SAT_PHONE_16",
+    "dynamic_line": "Katherine McAster:\nYou have to show me the pictures you took, as soon as you get on board.",
+    "responses": [
+      {
+        "text": "Aye-aye, captain…",
         "topic": "TALK_DONE"
       }
     ]

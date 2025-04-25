@@ -1,0 +1,154 @@
+[
+{
+  "type": "overmap_terrain",
+  "id": "ocean_dock_small",
+  "copy-from": "lake_dock_small",
+  "vision_levels": "blends_till_details",
+  "name": "dock",
+  "sym": "d",
+  "color": "white",
+  "see_cost": "none",
+  "flags": [ "OCEAN_SHORE" ]
+},
+{
+  "type": "overmap_terrain",
+  "id": "ocean_shore_dock_small",
+  "copy-from": "generic_recreation_water",
+  "vision_levels": "blends_till_details",
+  "name": "dock",
+  "sym": "d",
+  "color": "white",
+  "see_cost": "none",
+  "flags": [ "OCEAN_SHORE" ]
+},
+{
+  "type": "overmap_special",
+  "id": "ocean_shore_dock_small",
+  "overmaps": [
+    { "point": [ 0, 0, 0 ], "overmap": "ocean_surface", "locations": [ "ocean_surface" ] },
+    { "point": [ 1, 0, 0 ], "overmap": "ocean_dock_small_north", "locations": [ "ocean_surface" ] },
+    { "point": [ 2, 0, 0 ], "overmap": "ocean_surface", "locations": [ "ocean_surface" ] },
+    { "point": [ 0, 1, 0 ], "overmap": "ocean_shore", "locations": [ "ocean_shore" ] },
+    { "point": [ 1, 1, 0 ], "overmap": "ocean_shore_dock_small_north", "locations": [ "ocean_shore" ] },
+    { "point": [ 2, 1, 0 ], "overmap": "ocean_shore", "locations": [ "ocean_shore" ] }
+  ],
+  "city_sizes": [ 1, 20 ],
+  "occurrences": [ 0, 5 ],
+  "flags": [ "CLASSIC", "OCEAN_SHORE", "MAN_MADE", "WILDERNESS" ]
+},
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [ "ocean_dock_small" ],
+  "weight": 1000,
+  "object": {
+    "predecessor_mapgen": "ocean_surface",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           "
+    ],
+    "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+    "palettes": [ "dock_small" ]
+  }
+},
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [ "ocean_dock_small" ],
+  "weight": 750,
+  "object": {
+    "predecessor_mapgen": "ocean_surface",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "      dddddddddddd      ",
+      "      dddddddddddd      ",
+      "      dddddddddddd      "
+    ],
+    "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+    "palettes": [ "dock_small" ],
+    "place_nested": [ { "chunks": [ [ "NPC_lighthouse_man_spawn", 25 ], [ "null", 75 ] ], "x": 12, "y": 21 } ]
+  }
+},
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [ "ocean_shore_dock_small" ],
+  "object": {
+    "predecessor_mapgen": "ocean_shore",
+    "rows": [
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "           dd           ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        "
+    ],
+    "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+    "palettes": [ "dock_small" ],
+    "place_vehicles": [
+      { "chance": 100, "fuel": 15, "vehicle": "boat_motor_single", "x": 8, "y": 5, "rotation": 270 },
+      { "chance": 100, "fuel": 15, "vehicle": "boat_motor_single", "x": 13, "y": 5, "rotation": 270 }
+    ]
+  }
+}
+]

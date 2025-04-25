@@ -2,7 +2,7 @@
   {
     "type": "profession",
     "id": "photojournalist",
-    "name": "Trespassing Photojournalist",
+    "name": "Photojournalist",
     "description": "When the riots kicked off and everything went to hell, you and your gonzo team of bloodthirsty producers decided you could do better than the 'old media' cowards who refused to cover it.  Ignoring quarantines and curfews, supplied only with what they could buy at an army surplus store last-minute, they sent you in.  No one knew what to expect, but it wasn't… this.",
     "points": 1,
     "skills": [ { "level": 4, "name": "speech" } ],
@@ -38,7 +38,7 @@
     "difficulty": 1,
     "value": 0,
     "start": {
-      "assign_mission_target": { "om_terrain": "radio_tower", "reveal_radius": 3, "om_special": "station_radio", "search_range": 120 }
+      "assign_mission_target": { "om_terrain": "radio_tower", "reveal_radius": 3, "om_special": "station_radio", "search_range": 200 }
     },
     "origins": [ "ORIGIN_GAME_START" ]
   },
@@ -46,13 +46,27 @@
     "id": "MISSION_REACH_THE_OCEAN",
     "type": "mission_definition",
     "name": { "str": "Reach the ocean." },
-    "description": "Your production team can't reach you, but they've given you a rendezvous point.  Get to the ocean shore, send a signal, and wait for rescue…",
+    "description": "Your production team can't reach you, but they've given you a rendezvous point.  Get to the ocean shore, and go from there…",
     "goal": "MGOAL_GO_TO_TYPE",
     "destination": "ocean_shore",
     "difficulty": 1,
     "value": 0,
+    "end": {
+      "effect": [ { "assign_mission": "MISSION_REACH_A_DOCK" }, { "u_message": "After a journey from the horror-infested cities into the forbidding wilderness beyond, your harsh trek has finally ended.  Now that you know where you are, you need to find a dock to meet your crew, send a signal, and wait for rescue…", "type": "good", "popup": true }  ]
+    },
+    "origins": [ "ORIGIN_GAME_START" ]
+  },
+  {
+    "id": "MISSION_REACH_A_DOCK",
+    "type": "mission_definition",
+    "name": { "str": "Reach a dock." },
+    "description": "Now that you know where you are, you need to find a dock to meet your crew, send a signal, and wait for rescue…",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "ocean_shore_dock_small",
+    "difficulty": 1,
+    "value": 0,
     "start": {
-      "assign_mission_target": { "om_terrain": "ocean_shore", "reveal_radius": 3, "om_special": "ocean_shore", "search_range": 4000 }
+      "assign_mission_target": { "om_terrain": "ocean_shore_dock_small", "reveal_radius": 3, "om_special": "ocean_shore_dock_small", "search_range": 200 }
     },
     "origins": [ "ORIGIN_GAME_START" ]
   }
